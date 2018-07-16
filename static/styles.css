@@ -1,0 +1,294 @@
+/* Allow map to fill viewport */
+html, body, #map-canvas, .container-fluid
+{
+    /* Height of these elements */
+    height: 100%;
+
+    /* No margin around these elements */
+    margin: 0;
+
+    /* Disable scrollbars */
+    overflow: hidden;
+
+    /* No padding within these elements */
+    padding: 0;
+
+
+}
+
+/* content inside info window */
+.infoContent
+{
+    position:relative;
+
+    text-align: justify;
+    /* No margin around this element */
+    margin: 0;
+    /* width */
+    width: 340px;
+
+    /* Allow scrollbars as needed */
+    overflow: auto;
+
+    /* info box's max height */
+    max-height: 200px;
+
+    z-index:auto;
+
+}
+
+.infoContent .textContent
+{
+    width:326px;
+}
+
+.infoContent .title
+{
+   font-family:'Helvetica', 'Open Sans Condensed', sans-serif;
+   font-size: 18px;
+   font-weight: 600;
+   padding: 8px;
+   background-color: #7c871b;
+   color: white;
+   text-decoration: none;
+   margin-bottom: 0.5rem;
+   border-radius: 2px 2px 0 0;
+   text-align:center;
+
+}
+.gm-style-iw {
+   width: 340px !important;
+   top: 15px !important;
+   left: 0 !important;
+   border-radius: 2px 2px 0 0;
+   background-color: #fff;
+   border: 6px solid white;
+   border-radius: 10px 10px 10px 10px;
+   box-shadow: 0 0 10px #7c871b;
+
+}
+
+#trends ul
+{
+    list-style-type: none;
+    padding-left: 1rem;
+
+
+}
+
+#trends a
+{
+    color:#00aced;
+    font-weight: 600;
+}
+
+#trendTitle
+{
+    font-size: 18px;
+    font-weight: 600;
+    color:#0084b4;
+    padding-left: 1rem;
+}
+
+.infoContent a
+{
+    color: white;
+}
+
+.infoContent strong
+{
+    color: #93af46;
+
+}
+
+.crop
+{
+    width: 340px;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.crop .carousel-item
+{
+     margin-top: -40px;
+}
+
+.crop img {
+
+}
+
+/* Center form */
+#form
+{
+    /* Position form "absolutely" where we want it */
+    position: absolute;
+
+    /* Distance from top edge of viewport */
+    top: 28px;
+
+    /* Distance from top edge of viewport */
+    left: 28px;
+
+
+    /* Form's width */
+    max-width: 20%;
+
+    /* Form's height */
+    max-height: 90%;
+
+
+
+    /* Allow scrollbars as needed */
+    overflow-y: scroll;
+
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
+#form btn{
+    pointer-events: auto!important;
+}
+
+/* weather top right */
+#weather
+{
+    /* Position form "absolutely" where we want it */
+    position: absolute;
+
+    /* Distance from top edge of viewport */
+    top: 28px;
+
+    /* Distance from top edge of viewport */
+    right:4rem;
+
+    /* Form's width */
+    max-width: 25%;
+
+    /* Form's height */
+    max-height: 20%;
+
+    text-align:center;
+
+    white-space: nowrap;
+
+    line-height:1!important;
+
+    pointer-events: none;
+
+
+}
+
+
+/* Partly cloudy */
+#currentWeather .text{
+    color:#604603;
+}
+/* Lima Peru, Degree, text */
+p{
+    padding:0;
+    margin:0;
+}
+/* Lima */
+#city {
+    font-size:25px;
+    color:#537233;
+    font-weight:bold;
+}
+/* Peru */
+#country {
+    font-size:20px;
+    color:#537233;
+    font-weight:bold;
+}
+
+.currentDegree{
+    color:#ffc20f;
+    padding-top:0.2rem;
+    font-size:50px;
+}
+#forecast{
+    width:100%;
+}
+/* ul consist of 3 li */
+.forecastDay{
+    margin-top:0.2rem;
+    list-style-type: none;
+    font-size:12px;
+    padding: 0;
+}
+
+.forecastDay li{
+    display:inline-block;
+    margin:0.2rem;
+}
+
+.forecastDay li .degree{
+    color:#42330d;
+}
+
+.forecastDay li .day{
+    font-weight:bold;
+    color:#334c12;
+}
+
+/* Articles, Restuarants...Inside form, outside infoContent and button */
+.q
+{
+    /* Allow scrollbars as needed */
+    overflow: auto;
+
+    margin-bottom:0.5rem;
+    /* Such that card does not expand to maxWidth */
+    display: table;
+    pointer-events: auto!important;
+}
+
+#restuarants #articles{
+
+}
+
+/* collapse information dix */
+
+.card {
+
+    /* Text box's max height */
+    max-height: 20vh;
+    /* Allow scrollbars as needed */
+    overflow: auto;
+
+    padding:0.5rem 0.5rem 0rem 0rem;
+
+}
+
+.card-content{
+
+}
+.q a
+{
+    font-size:14px;
+    color: #4268a5;
+}
+.q a:hover
+{
+    font-size:14px;
+    color: #253a5b;
+}
+/*remove shadow from bootstrap buttons */
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  outline: 0 !important;
+  outline-offset: 0  !important;
+  background-image: none  !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none  !important;
+}
