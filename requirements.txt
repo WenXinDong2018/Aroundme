@@ -3,3 +3,4 @@ feedparser
 Flask
 python-twitter
 weather-api
+gunicorn==19.7.1
